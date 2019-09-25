@@ -20,7 +20,7 @@ public class _01_RobotRace {
 			army[i].setX(175*i+75);
 			army[i].setY(550);
 		}
-		while(win == true)
+		while(win)
 		for (int i = 0; i < army.length; i++) {
 			Random ran = new Random(); 
 			int randomNum= ran.nextInt(50);
