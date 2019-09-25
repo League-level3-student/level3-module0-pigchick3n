@@ -25,11 +25,12 @@ public class _01_RobotRace {
 			Random ran = new Random(); 
 			int randomNum= ran.nextInt(50);
 			distance= randomNum;
-			army[i].setSpeed(100);
+			army[i].setSpeed(10);
 			army[i].move(distance);
 			if (army[i].getY()<= 0) {
 				win = false;
-				JOptionPane.showMessageDialog(null, "ROBOT" + i + " HAS WON HEHE XD");
+				i++;
+				JOptionPane.showMessageDialog(null, "ROBOT " + i + " HAS WON HEHE XD");
 			}
 		}
 
